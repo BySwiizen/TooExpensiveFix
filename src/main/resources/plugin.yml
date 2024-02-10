@@ -1,6 +1,4 @@
 name: TooExpensiveFix
 main: com.budderman18.tooexpensivefix.TooExpensiveFix
-author: Budderman18
-description: Removes the "Too Expensive!" tag in anvils and makes all re-name costs only 1 level.
-version: 2.1
-api-version: 1.13
+version: ${project.version}
+api-version: '1.13'
