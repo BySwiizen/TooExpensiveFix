@@ -11,6 +11,18 @@ public class TooExpensiveFix extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         getServer().getPluginManager().registerEvents(this, this);
+        getLogger().info("-----------------------");
+        getLogger().info(getName() + " v" + getDescription().getVersion());
+        getLogger().info("The plugin is enabled.");
+        getLogger().info("-----------------------");
+    }
+
+    @Override
+    public void onDisable() {
+        getLogger().info("------------------------");
+        getLogger().info(getName() + " v" + getDescription().getVersion());
+        getLogger().info("The plugin is disabled.");
+        getLogger().info("------------------------");
     }
 
     @EventHandler
