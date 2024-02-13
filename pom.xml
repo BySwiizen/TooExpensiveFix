@@ -5,6 +5,7 @@
     <groupId>com.budderman18.TooExpensiveFix</groupId>
     <artifactId>TooExpensiveFix</artifactId>
     <packaging>jar</packaging>
+    <description>Plugin that removes the "Too Expensive!" during repair and which fixes all item renamings to 1 level</description>
 
     <version>2.3</version>
 

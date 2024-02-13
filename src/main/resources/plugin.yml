@@ -1,5 +1,6 @@
 name: TooExpensiveFix
 main: com.budderman18.tooexpensivefix.TooExpensiveFix
+description: ${project.description}
 
 version: ${project.version}
 api-version: '1.13'
