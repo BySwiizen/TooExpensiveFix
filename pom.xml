@@ -4,6 +4,7 @@
     <name>TooExpensiveFix</name>
     <groupId>com.budderman18.TooExpensiveFix</groupId>
     <artifactId>TooExpensiveFix</artifactId>
+    <packaging>jar</packaging>
 
     <version>2.3</version>
 
