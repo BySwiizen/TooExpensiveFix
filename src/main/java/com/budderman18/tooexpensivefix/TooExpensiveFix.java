@@ -28,12 +28,10 @@ public class TooExpensiveFix extends JavaPlugin implements Listener {
     @EventHandler
     public void onAnvilUse(PrepareAnvilEvent event) {
         event.getInventory().setMaximumRepairCost(21862);
-        ItemStack original = event.getInventory().getItem(0);
-        ItemStack result = event.getInventory().getItem(2);
-        if (original == null || result == null) return;
-        if (!original.hasItemMeta() || !result.hasItemMeta()) return;
-        if (!original.getItemMeta().getDisplayName().equals(result.getItemMeta().getDisplayName()) && event.getInventory().getItem(1) == null) {
-            event.getInventory().setRepairCost(1);
+        if (event.getInventory().getItem(2) != null) {
+            if (event.getInventory().getItem(0).getItemMeta().getDisplayName() != event.getInventory().getItem(2).getItemMeta().getDisplayName() && event.getInventory().getItem(1) == null) {
+                event.getInventory().setRepairCost(1);
+            }
         }
     }
 }
