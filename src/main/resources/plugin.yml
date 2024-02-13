@@ -3,3 +3,5 @@ main: com.budderman18.tooexpensivefix.TooExpensiveFix
 
 version: ${project.version}
 api-version: '1.13'
+
+authors: [BySwiizen, datatags]
