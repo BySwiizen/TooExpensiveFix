@@ -2,6 +2,7 @@ package com.budderman18.tooexpensivefix;
 
 import com.budderman18.tooexpensivefix.event.anvilListener;
 import org.bukkit.event.Listener;
+import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 
@@ -26,6 +27,7 @@ public class TooExpensiveFix extends JavaPlugin implements Listener {
     }
 
     private void registerEvent() {
-        getServer().getPluginManager().registerEvents(new anvilListener(), this);
+        PluginManager pm = getServer().getPluginManager();
+        pm.registerEvents(new anvilListener(), this);
     }
 }
