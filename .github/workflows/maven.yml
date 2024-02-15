@@ -22,3 +22,10 @@ jobs:
 
     - name: Build Project
       run: mvn -B package --file pom.xml
+
+    # https://github.com/actions/upload-artifact
+    - name: Upload build artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: TooExpensiveFix
+        path: target/TooExpensiveFix-*.jar
