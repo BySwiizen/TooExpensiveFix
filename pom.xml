@@ -18,10 +18,12 @@
 
 
     <repositories>
+        <!-- Sonatype -->
         <repository>
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
+        <!-- SpigotMC -->
         <repository>
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
@@ -29,11 +31,13 @@
     </repositories>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.jetbrains/annotations -->
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
             <version>24.0.1</version>
         </dependency>
+        <!-- https://hub.spigotmc.org/stash/projects/SPIGOT/repos/spigot/commits -->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
