@@ -1,0 +1,38 @@
+plugins {
+    id 'java-library'
+    // https://github.com/johnrengelman/shadow
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+group 'com.budderman18.tooexpensivefix'
+version '3.1'
+
+compileJava {
+    sourceCompatibility = '17'
+    targetCompatibility = '17'
+    options.encoding = 'UTF-8'
+}
+
+repositories {
+    mavenCentral()
+
+    // Sonatype
+    maven { url = 'https://oss.sonatype.org/content/groups/public/' }
+    // SpigotMC
+    maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.jetbrains/annotations
+    api 'org.jetbrains:annotations:24.1.0'
+    // https://hub.spigotmc.org/stash/projects/SPIGOT/repos/spigot/commits
+    compileOnly 'org.spigotmc:spigot-api:1.20.4-R0.1-SNAPSHOT'
+}
+
+processResources {
+    inputs.property("version", project.version)
+
+    filter org.apache.tools.ant.filters.ReplaceTokens, tokens: [
+            'version': project.version,
+    ]
+}
