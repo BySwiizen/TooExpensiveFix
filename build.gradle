@@ -28,3 +28,11 @@ dependencies {
     // https://hub.spigotmc.org/stash/projects/SPIGOT/repos/spigot/commits
     compileOnly 'org.spigotmc:spigot-api:1.20.4-R0.1-SNAPSHOT'
 }
+
+processResources {
+    inputs.property("version", project.version)
+
+    filter org.apache.tools.ant.filters.ReplaceTokens, tokens: [
+            'version': project.version,
+    ]
+}
