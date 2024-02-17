@@ -19,10 +19,14 @@ $RECYCLE.BIN/
 *.iml
 *.iws
 
-# Maven
-log/
-target/
-dependency-reduced-pom.xml
+# Gradle
+.gradle
+gradle-app.setting
+**/build/
+!src/**/build/
+.gradletasknamecache
+!gradle-wrapper.jar
+!gradle-wrapper.properties
 
 # Package files
 *.jar
