@@ -1,5 +1,5 @@
 plugins {
-    id 'java-library'
+    id 'java'
     // https://github.com/johnrengelman/shadow
     id 'com.github.johnrengelman.shadow' version '8.1.1'
 }
@@ -29,10 +29,11 @@ dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.20.4-R0.1-SNAPSHOT'
 }
 
+
 processResources {
     inputs.property("version", project.version)
 
     filter org.apache.tools.ant.filters.ReplaceTokens, tokens: [
-            'version': project.version,
+            'VERSION': project.version,
     ]
 }

@@ -1,5 +1,6 @@
 version: 2
 
+
 updates:
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -8,6 +9,7 @@ updates:
       time: "04:00"
       timezone: Europe/Paris
     open-pull-requests-limit: 10
+
   - package-ecosystem: "gradle"
     directory: "/"
     schedule:
