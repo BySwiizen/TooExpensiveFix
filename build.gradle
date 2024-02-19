@@ -27,6 +27,8 @@ dependencies {
     implementation 'org.jetbrains:annotations:24.1.0'
     // https://hub.spigotmc.org/stash/projects/SPIGOT/repos/spigot/commits
     compileOnly 'org.spigotmc:spigot-api:1.20.4-R0.1-SNAPSHOT'
+    // https://github.com/Bastian/bstats-metrics/releases
+    implementation 'org.bstats:bstats-bukkit:3.0.2'
 }
 
 

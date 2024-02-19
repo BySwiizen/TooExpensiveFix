@@ -1,6 +1,7 @@
 package com.budderman18.tooexpensivefix;
 
 import com.budderman18.tooexpensivefix.event.anvilListener;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -11,6 +12,7 @@ public class TooExpensiveFix extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
+        Metrics metrics = new Metrics(this, 21062);
         registerEvent();
         getLogger().info("-----------------------");
         getLogger().info(getName() + " v" + getDescription().getVersion());
