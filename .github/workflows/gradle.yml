@@ -28,7 +28,7 @@ jobs:
       run: chmod +x ./gradlew
 
     - name: Build Project
-      run: ./gradlew build
+      run: ./gradlew build shadowJar
 
     # https://github.com/actions/upload-artifact
     - name: Upload build artifact

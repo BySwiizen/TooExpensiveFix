@@ -32,6 +32,16 @@ dependencies {
 }
 
 
+shadowJar {
+    archiveClassifier = null
+    relocate 'org.bstats', 'com.budderman18.tooexpensivefix.metrics'
+}
+
+build {
+    dependsOn(shadowJar)
+}
+
+
 processResources {
     inputs.property("version", project.version)
 
