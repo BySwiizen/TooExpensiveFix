@@ -5,7 +5,7 @@ plugins {
 }
 
 group 'com.budderman18.tooexpensivefix'
-version '3.1'
+version '4.0'
 
 compileJava {
     sourceCompatibility = '17'
