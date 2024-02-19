@@ -1,3 +1,6 @@
+import org.apache.tools.ant.filters.ReplaceTokens
+
+
 plugins {
     id 'java'
     // https://github.com/johnrengelman/shadow
@@ -12,6 +15,7 @@ compileJava {
     targetCompatibility = '17'
     options.encoding = 'UTF-8'
 }
+
 
 repositories {
     mavenCentral()
@@ -45,7 +49,7 @@ build {
 processResources {
     inputs.property("version", project.version)
 
-    filter org.apache.tools.ant.filters.ReplaceTokens, tokens: [
+    filter ReplaceTokens, tokens: [
             'VERSION': project.version,
     ]
 }
