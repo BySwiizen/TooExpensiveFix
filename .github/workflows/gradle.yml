@@ -19,8 +19,8 @@ jobs:
       uses: gradle/actions/setup-gradle@v3.3.0
 
     # https://github.com/gradle/wrapper-validation-action
-    - name: Wrapper Validation
-      uses: gradle/wrapper-validation-action@v3.3.0
+    - name: Wrapper validation
+      uses: gradle/actions/wrapper-validation@v3.3.0
 
     # https://github.com/actions/setup-java
     - name: Set up JDK 17
