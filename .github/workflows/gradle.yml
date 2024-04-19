@@ -1,7 +1,9 @@
 name: Build Gradle
 
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
 
 
 jobs:
@@ -38,7 +40,7 @@ jobs:
     - name: Make Gradlew executable
       run: chmod +x ./gradlew
 
-    - name: Build Project
+    - name: Build project
       run: ./gradlew build shadowJar
 
     # https://github.com/actions/upload-artifact
