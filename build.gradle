@@ -11,8 +11,8 @@ group 'com.budderman18.tooexpensivefix'
 version '4.2'
 
 compileJava {
-    sourceCompatibility = '17'
-    targetCompatibility = '17'
+    sourceCompatibility = '21'
+    targetCompatibility = '21'
     options.encoding = 'UTF-8'
 }
 
