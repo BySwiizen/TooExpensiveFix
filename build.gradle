@@ -29,10 +29,10 @@ repositories {
 dependencies {
     // https://mvnrepository.com/artifact/org.jetbrains/annotations
     implementation 'org.jetbrains:annotations:24.1.0'
-    // https://hub.spigotmc.org/stash/projects/SPIGOT/repos/spigot/browse
-    compileOnly 'org.spigotmc:spigot-api:1.20.6-R0.1-SNAPSHOT'
     // https://github.com/Bastian/bstats-metrics
     implementation 'org.bstats:bstats-bukkit:3.0.2'
+    // https://hub.spigotmc.org/stash/projects/SPIGOT/repos/spigot/browse
+    compileOnly 'org.spigotmc:spigot-api:1.20.6-R0.1-SNAPSHOT'
 }
 
 
