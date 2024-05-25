@@ -1,8 +1,0 @@
-name: TooExpensiveFix
-main: com.budderman18.tooexpensivefix.TooExpensiveFix
-description: Plugin that removes the "Too Expensive!" during repair and which fixes all item renamings to 1 level
-
-version: @VERSION@
-api-version: '1.13'
-
-authors: [BySwiizen, datatags]
