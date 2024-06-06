@@ -39,7 +39,7 @@ dependencies {
 
 
 shadowJar {
-    archiveClassifier = null
+    archiveFileName = project.name + "-" + project.version + ".jar"
     relocate 'org.bstats', 'com.budderman18.tooexpensivefix.metrics'
 }
 
