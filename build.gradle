@@ -41,6 +41,7 @@ dependencies {
 shadowJar {
     archiveFileName = project.name + "-" + project.version + ".jar"
     relocate 'org.bstats', 'com.budderman18.tooexpensivefix.metrics'
+    exclude 'META-INF/**', 'LICENSE'
 }
 
 build {
