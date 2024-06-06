@@ -59,9 +59,5 @@ bukkit {
 }
 
 processResources {
-    inputs.property("version", project.version)
-
-    filter ReplaceTokens, tokens: [
-            'VERSION': project.version,
-    ]
+    filter ReplaceTokens, tokens: ['VERSION': project.version]
 }
