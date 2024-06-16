@@ -39,6 +39,6 @@ jobs:
       - uses: gmitch215/TestMC@v2.0.0
         with:
           runtime: 'spigot'
-          version: '1.20.6'
+          version: '1.21'
           time: 120
           path: 'build/libs/TooExpensiveFix-*.jar'
