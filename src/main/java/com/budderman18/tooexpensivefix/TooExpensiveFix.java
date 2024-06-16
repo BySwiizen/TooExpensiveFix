@@ -2,12 +2,11 @@ package com.budderman18.tooexpensivefix;
 
 import com.budderman18.tooexpensivefix.event.anvilListener;
 import org.bstats.bukkit.Metrics;
-import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 
-public class TooExpensiveFix extends JavaPlugin implements Listener {
+public class TooExpensiveFix extends JavaPlugin {
 
 
     @Override
