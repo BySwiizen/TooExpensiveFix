@@ -11,10 +11,10 @@ public class TooExpensiveFix extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        Metrics metrics = new Metrics(this, 21062);
+		registerMetrics();
         registerEvent();
         getLogger().info("-----------------------");
-        getLogger().info(getName() + " v" + getDescription().getVersion());
+        getLogger().info(this.getName() + " v" + this.getDescription().getVersion());
         getLogger().info("The plugin is enabled.");
         getLogger().info("-----------------------");
     }
@@ -22,13 +22,17 @@ public class TooExpensiveFix extends JavaPlugin {
     @Override
     public void onDisable() {
         getLogger().info("------------------------");
-        getLogger().info(getName() + " v" + getDescription().getVersion());
+        getLogger().info(this.getName() + " v" + this.getDescription().getVersion());
         getLogger().info("The plugin is disabled.");
         getLogger().info("------------------------");
     }
 
+	private void registerMetrics() {
+		Metrics metrics = new Metrics(this, 21062);
+	}
+
     private void registerEvent() {
-        PluginManager pm = getServer().getPluginManager();
-        pm.registerEvents(new anvilListener(), this);
+        PluginManager pluginmanager = getServer().getPluginManager();
+        pluginmanager.registerEvents(new anvilListener(), this);
     }
 }
