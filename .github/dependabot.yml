@@ -9,6 +9,8 @@ updates:
       time: "04:00"
       timezone: Europe/Paris
     open-pull-requests-limit: 10
+    reviewers:
+      - "BySwiizen"
 
   - package-ecosystem: "gradle"
     directory: "/"
@@ -17,3 +19,5 @@ updates:
       time: "04:00"
       timezone: Europe/Paris
     open-pull-requests-limit: 10
+    reviewers:
+      - "BySwiizen"
