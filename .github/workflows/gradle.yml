@@ -51,7 +51,7 @@ jobs:
 
     # https://github.com/actions/upload-artifact
     - name: Upload build artifact
-      uses: actions/upload-artifact@v4.3.4
+      uses: actions/upload-artifact@v4.3.5
       with:
         name: TooExpensiveFix
         path: build/libs/TooExpensiveFix-*.jar
