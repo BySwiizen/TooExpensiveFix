@@ -33,8 +33,13 @@ jobs:
       - name: Make Gradlew executable
         run: chmod +x ./gradlew
 
+      # https://github.com/nick-fields/retry
       - name: Build project
-        run: ./gradlew build shadowJar
+        uses: nick-invision/retry@v3.0.0
+        with:
+          max_attempts: 2
+          timeout_minutes: 5
+          command: ./gradlew build shadowJar
 
       # https://github.com/gmitch215/TestMC
       - uses: gmitch215/TestMC@v2.0.0
