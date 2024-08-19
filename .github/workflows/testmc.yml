@@ -42,7 +42,7 @@ jobs:
           command: ./gradlew build shadowJar
 
       # https://github.com/gmitch215/TestMC
-      - uses: gmitch215/TestMC@v2.0.0
+      - uses: gmitch215/TestMC@v2.0.1
         with:
           runtime: 'spigot'
           version: '1.21'
