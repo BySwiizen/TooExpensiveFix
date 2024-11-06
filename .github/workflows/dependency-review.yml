@@ -23,4 +23,4 @@ jobs:
 
       # https://github.com/actions/dependency-review-action
       - name: Dependency Review
-        uses: actions/dependency-review-action@v4.3.5
+        uses: actions/dependency-review-action@v4.4.0
